@@ -10,18 +10,18 @@ st.write("Enter your details and check if you would survive!")
 gender = st.selectbox("Select gender", ["Male", "Female"])
 age = st.slider("How old are you?", 0, 100, 25)
 ticket_class = st.selectbox("Ticket class", [1, 2, 3])
-fare = st.number_input("Ticket fare (in dollars)", value=50)
+fare = st.number_input("Ticket fare (in dollars)", value=50, max_value=500)
 family = st.slider("How many people are traveling with you?", 0, 10, 0)
-embarked = st.selectbox("Embarked", ["C", "Q", "S"])
+embarked = st.selectbox("Embarked", ["Cherbourg", "Queenstown", "Southampton"])
 
 gender_machine = 0 if gender == "Male" else 1
 
 is_q = False
 is_s = False
 
-if embarked == "Q":
+if embarked == "Queenstown":
     is_q = True
-elif embarked == "S":
+elif embarked == "Southampton":
     is_s = True
 
 if st.button("Calculate my chances!"):
