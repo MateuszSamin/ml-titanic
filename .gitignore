@@ -1,0 +1,18 @@
+# Zmienne środowiskowe i wirtualne środowiska (bardzo ważne!)
+venv/
+env/
+.env
+
+# Pliki tymczasowe i pamięć podręczna Pythona (śmieci)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pliki tymczasowe notatników Jupyter
+.ipynb_checkpoints/
+
+# Pliki systemowe macOS (śmieci systemowe)
+.DS_Store
+
+# Pobrane, surowe dane (opcjonalnie)
+# *.csv
